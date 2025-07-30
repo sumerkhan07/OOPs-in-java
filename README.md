@@ -5,10 +5,10 @@ Object Orientd Programming in java
 OOPs is a technique which is use to represent the real word object through to the programming word.
 The piller of Oops 
 ------------------------------------------------------------
---Encapsulation
---Inheritance 
---Abstraction
---Polymorphism
+--Encapsulation<br>
+--Inheritance <br>
+--Abstraction <br>
+--Polymorphism <br>
 -------------------------------------------------------------
 Class-->
 It is the blue print of an object.
