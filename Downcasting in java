@@ -1,0 +1,33 @@
+Downcasting in java 
+Downcasting refers to converting a superclass (parent class) reference or object into a subclass (child class) reference.
+Unlike upcasting, it’s explicit and can be unsafe if not handled properly.
+
+🔑 Key Points:
+It’s explicit — you must tell the compiler you want to treat the superclass object as the subclass.
+Risky because the actual object might not be of the subclass type, leading to ClassCastException.
+Used when you need to access subclass-specific methods or fields after having a superclass reference.
+
+Example
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Animal animal = new Dog();  // Upcasting: Dog → Animal
+        
+        animal.eat();               // Works fine
+        
+        // Downcasting: Animal → Dog
+        Dog dog = (Dog) animal;
+        dog.bark();                 // Now it works because it's really a Dog object
+    }
+}
