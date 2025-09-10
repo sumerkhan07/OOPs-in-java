@@ -1,0 +1,31 @@
+Upcasting in Java (and similar object-oriented languages)
+Upcasting refers to converting a subclass (child class) reference or object to a superclass (parent class) reference.
+It's done implicitly or explicitly and is a way to treat a subclass object as an instance of its superclass.
+
+🔑 Key Points:
+It’s safe and allowed because every subclass is-a superclass (inheritance relationship).
+It helps in polymorphism, where you can use the subclass object through a superclass reference.
+You lose access to subclass-specific methods and fields unless you downcast back.
+
+
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Dog dog = new Dog();        // Subclass object
+        Animal animal = dog;        // Upcasting: Dog → Animal
+        
+        animal.eat();              // Works: eat() is in Animal
+        // animal.bark();          // Error! bark() is specific to Dog
+    }
+}
