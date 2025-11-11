@@ -11,3 +11,36 @@ Key Concepts
 Abstraction reduces complexity by showing only necessary operations and hiding details, similar
 to how a TV remote exposes buttons but conceals circuitry.​
 In Java, abstraction can be achieved using abstract classes and interfaces.​
+
+
+What is abstraction in Java?
+Abstraction is the process of hiding internal implementation details and showing only essential functionality to the user. 
+It focuses on what an object does rather than how it does it.
+
+How is abstraction achieved in Java?
+Through abstract classes (partial abstraction) and interfaces (full abstraction).
+
+What is an abstract class?
+A class declared with the abstract keyword that may have abstract methods without implementation. 
+It cannot be instantiated directly and must be subclassed.
+
+Can an abstract class have a constructor?
+Yes, abstract classes can have constructors which are called when subclass objects are created.
+
+Can you create an object of an abstract class?
+No, you cannot create an instance of an abstract class directly.
+
+What is the difference between an abstract class and an interface?
+Abstract classes can have both abstract and non-abstract methods, 
+whereas interfaces in Java define methods that are abstract by default. 
+A class may extend only one abstract class but implement multiple interfaces.
+
+Can an abstract class have non-abstract methods?
+Yes, abstract classes can have both abstract and concrete methods.
+
+What happens if you don’t override all abstract methods in a subclass?
+The subclass must be declared abstract as well; otherwise, it results in a compile-time error.
+
+How is abstraction different from encapsulation?
+Abstraction hides implementation details by exposing only needed functionality,
+whereas encapsulation hides data and code inside a class by binding them together.
