@@ -1,0 +1,13 @@
+Abstraction in Java is the process of hiding internal implementation details and exposing only the essential 
+features of an object or system to the outside world.
+Abstraction is the process of hiding the details and providing only the necessary things to the end user.
+More specifically, in software engineering and programming, abstraction means focusing on the essential
+features while hiding the complex or irrelevant internal details from the user. This simplification allows 
+users or other parts of a system to interact with an object or component without needing to understand its
+complex inner workings.
+This allows developers to focus on what an object does rather than how it accomplishes its functionality.​
+
+Key Concepts
+Abstraction reduces complexity by showing only necessary operations and hiding details, similar
+to how a TV remote exposes buttons but conceals circuitry.​
+In Java, abstraction can be achieved using abstract classes and interfaces.​
