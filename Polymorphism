@@ -1,0 +1,9 @@
+what is the polymorphism in the java?
+Polymorphism in Java is a core concept of object-oriented programming
+that allows an entity (such as a method or object) to take many forms. 
+It enables the same method or function to behave differently based on
+the object that invokes it or the arguments it receives.
+
+--There are two main types of polymorphism in Java:
+1 -- Compile-time Polymorphism (Static Polymorphism)
+2 --Runtime Polymorphism (Dynamic Polymorphism)
