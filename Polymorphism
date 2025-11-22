@@ -6,4 +6,46 @@ the object that invokes it or the arguments it receives.
 
 --There are two main types of polymorphism in Java:
 1 -- Compile-time Polymorphism (Static Polymorphism)
-2 --Runtime Polymorphism (Dynamic Polymorphism)
+2 -- Runtime Polymorphism (Dynamic Polymorphism)
+
+
+1-- Compile-time Polymorphism (Static Polymorphism)
+It achieved through method overloading, where multiple methods have the same
+name but differ in parameter lists within the same class. 
+The correct method to be called is determined during compile time.
+
+public class Compile {
+    public  int test(int a, int b){
+        return a+b;
+    }
+public int test(int a, int b ,int c){
+        return c;
+    }
+public static void main(String[] args) {
+        Compile compile=new Compile();
+       int  d=compile.test(10,20);
+        System.out.println(d);
+        int x=compile.test(10,20,30);
+        System.out.println(x);
+    }
+}
+
+
+2 -- Runtime Polymorphism (Dynamic Polymorphism)
+It achieved through method overriding, where a subclass provides its own implementation 
+of a method defined in a superclass. The JVM decides at runtime which method to execute 
+depending on the object's actual type.
+
+class Animal {
+    void sound() { System.out.println("Animal makes sound"); }
+}
+class Dog extends Animal {
+    @Override
+    void sound() { System.out.println("Dog barks"); }
+
+    public static void main(String[] args) {
+        Animal d=new Dog();
+        d.sound();
+    }
+}
+
