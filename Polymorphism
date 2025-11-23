@@ -8,7 +8,6 @@ the object that invokes it or the arguments it receives.
 1 -- Compile-time Polymorphism (Static Polymorphism)
 2 -- Runtime Polymorphism (Dynamic Polymorphism)
 
-
 1-- Compile-time Polymorphism (Static Polymorphism)
 It achieved through method overloading, where multiple methods have the same
 name but differ in parameter lists within the same class. 
