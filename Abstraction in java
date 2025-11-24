@@ -8,7 +8,7 @@ complex inner workings.
 This allows developers to focus on what an object does rather than how it accomplishes its functionality.​
 
 Key Concepts
-Abstraction reduces complexity by showing only necessary operations and hiding details, similar
+Abstraction  reduces complexity by showing only necessary operations and hiding details, similar
 to how a TV remote exposes buttons but conceals circuitry.​
 In Java, abstraction can be achieved using abstract classes and interfaces.​
 
